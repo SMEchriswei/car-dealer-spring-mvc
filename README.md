@@ -13,7 +13,7 @@ docker run --name dealerDB -e POSTGRES_DB=car_dev -e POSTGRES_USER=admin -e POST
 
     mvn compile flyway:migrate -P unit -Ddb_url=${url} -Ddb_password=${password} -Ddb_username=${username}
 
-you can also add that into maven settings.xml
+you can also add that into maven settings.xml.
 
 ```$xml
 	<profiles>
